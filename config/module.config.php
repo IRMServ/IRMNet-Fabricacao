@@ -1,5 +1,5 @@
 <?php
-
+namespace Fabricacao;
 /**
  * Zend Framework (http://framework.zend.com/)
  *
@@ -8,6 +8,16 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 return array(
+     'acl' => array(
+        'Fabricacao' => array(
+            'FABRICACAO' => array(
+                'Fabricacao\Controller\Index:index',              
+            ),
+            'TI' => array(
+                'Fabricacao\Controller\Index:index',              
+            ),
+        )
+    ),
     'router' => array(
         'routes' => array(
             // This defines the hostname route which forms the base
